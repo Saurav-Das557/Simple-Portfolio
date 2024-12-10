@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saurav Das - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <script>
+    // Tailwind Dark Mode Configuration
+    tailwind.config = {
+      darkMode: 'class',
+    };
+  </script>
+  <style>
+    /* Custom Animations and Transitions */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-fade-in {
+      animation: fadeIn 0.8s ease-out;
+    }
+    .skill-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .skill-hover:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+  <!-- Dark Mode Toggle -->
+  <button id="dark-mode-toggle" class="fixed top-4 right-4 z-50 bg-gray-200 dark:bg-gray-700 p-2 rounded-full">
+    <i id="theme-icon" class="fas fa-moon dark:fa-sun"></i>
+  </button>
+
+  <!-- Hero Section -->
+  <section id="hero" class="bg-blue-600 text-white py-16 text-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-blue-700 opacity-50 animate-pulse"></div>
+    <div class="max-w-4xl mx-auto relative z-10 animate-fade-in">
+      <img src="assets/mypic.jpg" alt="Saurav Das" class="w-40 h-40 rounded-full mx-auto border-4 border-white shadow-lg mb-4 transform transition hover:scale-110">
+      <h1 class="text-4xl font-bold">Hi, I'm Saurav Das</h1>
+      <p class="mt-4 text-lg">A passionate Computer Science graduate with a love for coding, technology, and design.</p>
+      <div class="mt-6 flex justify-center space-x-4">
+        <a href="https://github.com/Saurav-Das557" target="_blank" class="hover:text-blue-200 transition"><i class="fab fa-github text-2xl"></i></a>
+        <a href="https://www.linkedin.com/in/SauravDas557/" target="_blank" class="hover:text-blue-200 transition"><i class="fab fa-linkedin text-2xl"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="py-12 dark:bg-gray-800">
+    <div class="max-w-4xl mx-auto text-center animate-fade-in">
+      <h2 class="text-3xl font-semibold mb-4 text-blue-600 dark:text-blue-400">About Me</h2>
+      <p class="text-lg max-w-2xl mx-auto">I am a recent Computer Science graduate from BRAC University with a strong passion for developing innovative solutions, delving into artificial intelligence, and crafting intuitive, user-friendly designs. Beyond coding, I enjoy reading, photography, and discovering new ways to merge creativity with technology.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-12 bg-gray-50 dark:bg-gray-700">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-6 text-blue-600 dark:text-blue-400">Skills</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div class="bg-white dark:bg-gray-800 shadow-md rounded-lg p-4 skill-hover">
+          <i class="fab fa-html5 text-orange-600 text-4xl"></i>
+          <p class="mt-2 dark:text-gray-200">HTML</p>
+        </div>
+        <div class="bg-white dark:bg-gray-800 shadow-md rounded-lg p-4 skill-hover">
+          <i class="fab fa-css3-alt text-blue-500 text-4xl"></i>
+          <p class="mt-2 dark:text-gray-200">CSS</p>
+        </div>
+        <div class="bg-white dark:bg-gray-800 shadow-md rounded-lg p-4 skill-hover">
+          <i class="fab fa-js text-yellow-500 text-4xl"></i>
+          <p class="mt-2 dark:text-gray-200">JavaScript</p>
+        </div>
+        <div class="bg-white dark:bg-gray-800 shadow-md rounded-lg p-4 skill-hover">
+          <i class="fab fa-react text-blue-400 text-4xl"></i>
+          <p class="mt-2 dark:text-gray-200">React</p>
+        </div>
+        <div class="bg-white dark:bg-gray-800 shadow-md rounded-lg p-4 skill-hover">
+          <i class="fab fa-python text-green-500 text-4xl"></i>
+          <p class="mt-2 dark:text-gray-200">Python</p>
+        </div>
+        <div class="bg-white dark:bg-gray-800 shadow-md rounded-lg p-4 skill-hover">
+          <i class="fab fa-github text-gray-700 text-4xl dark:text-gray-300"></i>
+          <p class="mt-2 dark:text-gray-200">GitHub</p>
+        </div>
+        <div class="bg-white dark:bg-gray-800 shadow-md rounded-lg p-4 skill-hover">
+          <i class="fas fa-database text-purple-500 text-4xl"></i>
+          <p class="mt-2 dark:text-gray-200">SQL</p>
+        </div>
+        <div class="bg-white dark:bg-gray-800 shadow-md rounded-lg p-4 skill-hover">
+          <i class="fas fa-brain text-indigo-500 text-4xl"></i>
+          <p class="mt-2 dark:text-gray-200">Machine Learning</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="py-12 dark:bg-gray-800">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-6 text-blue-600 dark:text-blue-400">Education</h2>
+      <ul class="space-y-4 text-lg">
+        <li class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md">
+          <strong>Bachelor of Science in Computer Science & Engineering</strong><br>
+          <span class="text-gray-600 dark:text-gray-300">BRAC University,May 2024</span>
+        </li>
+        <li class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md">
+          <strong>Higher Secondary Certificate</strong><br>
+          <span class="text-gray-600 dark:text-gray-300">Mohammadpur Govt. College, 2019</span>
+        </li>
+        <li class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md">
+          <strong>Secondary School Certificate</strong><br>
+          <span class="text-gray-600 dark:text-gray-300">Dhanmondi Govt. Boys' High School, 2017</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-12 bg-gray-50 dark:bg-gray-700">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-6 text-blue-600 dark:text-blue-400">Portfolio</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-4 transform transition hover:scale-105">
+          <h3 class="text-xl font-bold dark:text-gray-200">Google Gemini Clone</h3>
+          <p class="mt-2 dark:text-gray-300">Made a clone of google gemini using react google generative ai api key</p>
+          <div class="mt-4">
+            <a href="https://github.com/Saurav-Das557/Gemini-Clone-Using-React" class="text-blue-600 dark:text-blue-400 hover:underline">Live Link</a> | 
+            <a href="https://react-gemini-clone.netlify.app" class="text-blue-600 dark:text-blue-400 hover:underline">GitHub</a>
+          </div>
+        </div>
+        <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-4 transform transition hover:scale-105">
+          <h3 class="text-xl font-bold dark:text-gray-200">Spotify Clone</h3>
+          <p class="mt-2 dark:text-gray-300">A clone of Spotify using React.</p>
+          <div class="mt-4">
+            <a href="https://spotify-clone-using-react-sd-ten.vercel.app" class="text-blue-600 dark:text-blue-400 hover:underline">Live Link</a> | 
+            <a href="https://github.com/Saurav-Das557/Spotify-Clone-Using-React" class="text-blue-600 dark:text-blue-400 hover:underline">GitHub</a>
+          </div>
+        </div>
+        <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-4 transform transition hover:scale-105">
+          <h3 class="text-xl font-bold dark:text-gray-200">Food Recipe Website</h3>
+          <p class="mt-2 dark:text-gray-300">Recipe website with user-friendly features made with <Span class="font-bold">MERN</Span>.</p>
+          <div class="mt-4">
+            <!-- <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline">Live Link</a> |  -->
+            <a href="https://github.com/Saurav-Das557/Food-Recipe-Organizer" class="text-blue-600 dark:text-blue-400 hover:underline">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="py-12 dark:bg-gray-800">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-6 text-blue-600 dark:text-blue-400">Resume</h2>
+      <a href="Saurav_Das_Resume.pdf" download class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-12 bg-gray-50 dark:bg-gray-700">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-6 text-blue-600 dark:text-blue-400">Contact Me</h2>
+      <form action="mailto:sauravdas557@gmail.com" method="POST" enctype="text/plain" class="space-y-4 max-w-lg mx-auto">
+        <input type="text" name="name" placeholder="Your Name" class="w-full p-3 border rounded dark:bg-gray-800 dark:border-gray-600 dark:text-gray-200">
+        <input type="email" name="email" placeholder="Your Email" class="w-full p-3 border rounded dark:bg-gray-800 dark:border-gray-600 dark:text-gray-200">
+        <textarea name="message" placeholder="Your Message" class="w-full p-3 border rounded dark:bg-gray-800 dark:border-gray-600 dark:text-gray-200"></textarea>
+        <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-blue-600 text-white py-4 text-center dark:bg-blue-800">
+    <p>© 2024 Saurav Das. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('dark-mode-toggle');
+    const html = document.documentElement;
+    const icon = document.getElementById('theme-icon');
+    toggle.addEventListener('click', () => {
+      if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        icon.classList.replace('fa-sun', 'fa-moon');
+      } else {
+        html.classList.add('dark');
+        icon.classList.replace('fa-moon', 'fa-sun');
+      }
+    });
+  </script>
+</body>
+</html>
