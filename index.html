@@ -163,22 +163,66 @@
   <section id="resume" class="py-12 dark:bg-gray-800">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-3xl font-semibold mb-6 text-blue-600 dark:text-blue-400">Resume</h2>
-      <a href="Saurav_Das_Resume.pdf" download class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition">Download Resume</a>
+      <a href="https://drive.google.com/file/d/1TiG1pgBXRMFZtFpIcHtwW5TlIIQTePbT/view?usp=sharing">Download Resume</a>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-12 bg-gray-50 dark:bg-gray-700">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-semibold mb-6 text-blue-600 dark:text-blue-400">Contact Me</h2>
-      <form action="mailto:sauravdas557@gmail.com" method="POST" enctype="text/plain" class="space-y-4 max-w-lg mx-auto">
-        <input type="text" name="name" placeholder="Your Name" class="w-full p-3 border rounded dark:bg-gray-800 dark:border-gray-600 dark:text-gray-200">
-        <input type="email" name="email" placeholder="Your Email" class="w-full p-3 border rounded dark:bg-gray-800 dark:border-gray-600 dark:text-gray-200">
-        <textarea name="message" placeholder="Your Message" class="w-full p-3 border rounded dark:bg-gray-800 dark:border-gray-600 dark:text-gray-200"></textarea>
-        <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition">Send</button>
-      </form>
-    </div>
+ <!-- Contact Me Section -->
+<section class="bg-gray-100 dark:bg-gray-800 py-12">
+	<div class="container mx-auto px-4">
+	  <h2 class="text-2xl font-semibold text-gray-800 dark:text-white text-center mb-6">Contact Me</h2>
+	  <p class="text-center text-gray-600 dark:text-gray-300 mb-8">
+		Have questions or want to get in touch? Drop a message below!
+	  </p>
+  
+	  <form
+		action="https://formspree.io/f/mdkovdgr"
+		method="POST"
+		class="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 max-w-lg mx-auto"
+	  >
+		<!-- Email Field -->
+		<div class="mb-4">
+		  <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+			Your Email
+		  </label>
+		  <input
+			type="email"
+			id="email"
+			name="email"
+			required
+			placeholder="example@email.com"
+			class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-indigo-500"
+		  />
+		</div>
+  
+		<!-- Message Field -->
+		<div class="mb-4">
+		  <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+			Your Message
+		  </label>
+		  <textarea
+			id="message"
+			name="message"
+			required
+			placeholder="Write your message here..."
+			rows="5"
+			class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-indigo-500"
+		  ></textarea>
+		</div>
+  
+		<!-- Submit Button -->
+		<div class="text-center">
+		  <button
+			type="submit"
+			class="w-full px-4 py-2 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-indigo-500"
+		  >
+			Send Message
+		  </button>
+		</div>
+	  </form>
+	</div>
   </section>
+  
 
   <footer class="bg-blue-600 text-white py-4 text-center dark:bg-blue-800">
     <p>© 2024 Saurav Das. All Rights Reserved.</p>
